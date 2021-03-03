@@ -49,7 +49,8 @@ var cardBackSection = function (t) {
 
         votes = computeVotes(votes, members);
 
-        var voteValues = ['yes', 'no', 'neutral', 'other'];
+        var voteValues = ['high', 'low', 'medium'];
+        // var voteValues = ['yes', 'no', 'neutral', 'other'];
         var title = 'Votes (' + Object.keys(votes).length + '/' + members.length + ')';
 
         if (Object.keys(votes).length > 0) {

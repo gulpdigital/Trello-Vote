@@ -2,3 +2,5 @@
 *.iml
 deploy*.sh
 public/img/icon-black.png
+node_modules/
+package-lock.json

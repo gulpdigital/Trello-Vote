@@ -1,4 +1,4 @@
-var ICON = 'https://trello-vote-priority.herokuapp.com/img/icon-black.png';
+var ICON = 'https://trello-vote-priority.herokuapp.com/img/rank.png';
 
 /**
  * @param {string} type

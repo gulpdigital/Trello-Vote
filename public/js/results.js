@@ -76,6 +76,7 @@ var displayVotes = function (votes, members) {
         }
 
         listElement.appendChild(vote);
+        console.log('listElement', listElement)
         list.appendChild(listElement);
     });
 

@@ -4,6 +4,11 @@ var memberId = t.getContext().member;
 var displayVotes = function (votes, members) {
     var memberIdMap = {};
     var list = document.createElement('ul');
+
+    var highList = document.createElement('ul').classList.add('high-list');
+    var mediumList = document.createElement('ul').classList.add('medium-list');
+    var lowList = document.createElement('ul').classList.add('low-list');
+
     var high = [];
     var medium = [];
     var low = [];
@@ -78,6 +83,8 @@ var displayVotes = function (votes, members) {
             vote.innerHTML = 'no vote yet';
         }
 
+        listElement.appendChild(vote);
+
        
         if (listElement.className === 'high') {
             high.push(listElement)
@@ -90,6 +97,9 @@ var displayVotes = function (votes, members) {
             low.push(listElement)
         }
 
+        
+
+
         console.log('high', test);
         console.log('medium', test);
         console.log('low', test);
@@ -97,8 +107,13 @@ var displayVotes = function (votes, members) {
         console.log('listElement', listElement);
         console.log('vote', vote);
 
-        listElement.appendChild(vote);
+        
         list.appendChild(listElement);
+
+
+        highList.appendChild(high)
+        mediumList.appendChild(medium)
+        lowList.appendChild(low) 
     });
 
     document.getElementById('results').innerHTML = '';

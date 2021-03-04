@@ -96,13 +96,6 @@ var displayVotes = function (votes, members) {
         if (listElement.className === 'low') {
             low.push(listElement)
         }
-
-        
-
-
-        console.log('high', test);
-        console.log('medium', test);
-        console.log('low', test);
         
         console.log('listElement', listElement);
         console.log('vote', vote);

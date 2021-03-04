@@ -120,17 +120,17 @@ var cardBadges = function (t) {
         var votesAmount = Object.keys(votes).length;
         var colour = 'light-gray';
 
-        if (isInList) {
-            if (votesAmount === members.length) {
-                colour = 'green';
-            } else if (votesAmount < 1) {
-                colour = 'red';
-            } else if (votesAmount >= ((members.length / 4 * 3) - (members.length / 12))) {
-                colour = 'lime';
-            } else {
-                colour = 'yellow';
-            }
-        }
+        // if (isInList) {
+        //     if (votesAmount === members.length) {
+        //         colour = 'green';
+        //     } else if (votesAmount < 1) {
+        //         colour = 'red';
+        //     } else if (votesAmount >= ((members.length / 4 * 3) - (members.length / 12))) {
+        //         colour = 'lime';
+        //     } else {
+        //         colour = 'yellow';
+        //     }
+        // }
 
         if (votesAmount > 0 || isInList) {
             return [{

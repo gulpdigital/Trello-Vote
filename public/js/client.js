@@ -14,10 +14,10 @@ var cardButtons = function (t) {
         if (canVote) {
             return [{
                 icon: ICON,
-                text: 'Vote',
+                text: 'Priority Vote',
                 callback: function (t) {
                     return t.popup({
-                        title: 'Vote',
+                        title: 'Priority Vote',
                         url: 'vote'
                     });
                 }

@@ -51,7 +51,7 @@ var cardBackSection = function (t) {
 
         var voteValues = ['high', 'low', 'medium'];
         // var voteValues = ['yes', 'no', 'neutral', 'other'];
-        var title = 'Priority Votes (' + Object.keys(votes).length + '/' + members.length + ')';
+        var title = 'Votes (' + Object.keys(votes).length + '/' + members.length + ')';
 
         if (Object.keys(votes).length > 0) {
             var voteStats = Object.values(votes).reduce(function (carry, vote) {

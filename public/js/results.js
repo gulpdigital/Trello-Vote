@@ -5,14 +5,6 @@ var displayVotes = function (votes, members) {
     var memberIdMap = {};
     var list = document.createElement('ul');
 
-    var highList = document.createElement('ul').classList.add('high-list');
-    var mediumList = document.createElement('ul').classList.add('medium-list');
-    var lowList = document.createElement('ul').classList.add('low-list');
-
-    var high = [];
-    var medium = [];
-    var low = [];
-
     votes = votes || {};
 
     members.map(function (member) {
@@ -84,29 +76,7 @@ var displayVotes = function (votes, members) {
         }
 
         listElement.appendChild(vote);
-
-       
-        if (listElement.className === 'high') {
-            high.push(listElement)
-        }
-        if (listElement.className === 'medium') {
-            medium.push(listElement)
-        }
-
-        if (listElement.className === 'low') {
-            low.push(listElement)
-        }
-        
-        console.log('listElement', listElement);
-        console.log('vote', vote);
-
-        
         list.appendChild(listElement);
-
-
-        highList.appendChild(high)
-        mediumList.appendChild(medium)
-        lowList.appendChild(low) 
     });
 
     document.getElementById('results').innerHTML = '';

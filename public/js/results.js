@@ -4,7 +4,9 @@ var memberId = t.getContext().member;
 var displayVotes = function (votes, members) {
     var memberIdMap = {};
     var list = document.createElement('ul');
-    var test = [];
+    var high = [];
+    var medium = [];
+    var low = [];
 
     votes = votes || {};
 
@@ -78,19 +80,24 @@ var displayVotes = function (votes, members) {
 
        
         if (listElement.className === 'high') {
-            test.push(listElement)
+            high.push(listElement)
         }
         if (listElement.className === 'medium') {
-            test.push(listElement)
+            medium.push(listElement)
         }
 
         if (listElement.className === 'low') {
-            test.push(listElement)
+            low.push(listElement)
         }
 
-        console.log('test', test);
-        listElement.appendChild(vote);
+        console.log('high', test);
+        console.log('medium', test);
+        console.log('low', test);
+        
         console.log('listElement', listElement);
+        console.log('vote', vote);
+
+        listElement.appendChild(vote);
         list.appendChild(listElement);
     });
 

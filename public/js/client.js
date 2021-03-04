@@ -14,10 +14,10 @@ var cardButtons = function (t) {
         if (canVote) {
             return [{
                 icon: ICON,
-                text: 'Vote',
+                text: 'Priority Vote',
                 callback: function (t) {
                     return t.popup({
-                        title: 'Vote',
+                        title: 'Priority Vote',
                         url: 'vote'
                     });
                 }
@@ -51,7 +51,7 @@ var cardBackSection = function (t) {
 
         var voteValues = ['high', 'low', 'medium'];
         // var voteValues = ['yes', 'no', 'neutral', 'other'];
-        var title = 'Votes (' + Object.keys(votes).length + '/' + members.length + ')';
+        var title = 'Priority Votes (' + Object.keys(votes).length + '/' + members.length + ')';
 
         if (Object.keys(votes).length > 0) {
             var voteStats = Object.values(votes).reduce(function (carry, vote) {
